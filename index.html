@@ -12,18 +12,22 @@
       padding:20px;
     }
   </style>
+  
+</head>
+<body>
   <h1>Selamat datang di Website pertama saya</h1>
   <p>Saya Mochammad Sakroni (Roni)</p>
+  <label>Masukkan Nama Kamu</label>
+  <input type ="text" id="namaUser" placeholder="Ketik Disini"><br><br>
   <button id="Klik Saya">Klik Saya</button>
 
   <script>
     const tombol = document.getElementById("Klik Saya");
+    const inputNama = document.getElementById("namaUser");
     tombol.addEventListener("click",function(){
-      alert("Terima Kasih sudah berusaha");
+      const namaUser = inputNama.value;
+      alert("Halo " + namaUser + " !Terima Kasih sudah berusaha lagi");
     });
   </script>
-</head>
-<body>
-  
 </body>
 </html>
